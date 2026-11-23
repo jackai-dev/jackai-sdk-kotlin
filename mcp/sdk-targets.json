@@ -1,0 +1,76 @@
+{
+  "contract_fingerprint": "c7ca5e5ebb4c092910ec72b371e188303358c5e34d2908c0a88f782a241162cf",
+  "sdk_targets_version": "1.1.0",
+  "targets": [
+    {
+      "identity": {
+        "coordinates": "dev.omniwrap.jackai.platform.os.hub.api.subset.sdk:jackai-platform-os-hub-api-public-subset-sdk:1.0.0",
+        "ecosystem": "Maven",
+        "entry": "dev.omniwrap.jackai.platform.os.hub.api.subset.sdk.ApiClient",
+        "import": "import dev.omniwrap.jackai.platform.os.hub.api.subset.sdk.ApiClient"
+      },
+      "operations": {
+        "failUsageQuota": {
+          "member": "kernel.failUsageQuota",
+          "method": "POST",
+          "path": "/v1/kernel/usage/fail",
+          "resource": "kernel",
+          "signature": "suspend fun failUsageQuota(params: FailUsageQuotaParams, requestOptions: RequestOptions = RequestOptions()): ApiResult<Unit>"
+        },
+        "finalizeUsageQuota": {
+          "member": "kernel.finalizeUsageQuota",
+          "method": "POST",
+          "path": "/v1/kernel/usage/finalize",
+          "resource": "kernel",
+          "signature": "suspend fun finalizeUsageQuota(params: FinalizeUsageQuotaParams, requestOptions: RequestOptions = RequestOptions()): ApiResult<Unit>"
+        },
+        "getCurrentUser": {
+          "member": "user.getCurrentUser",
+          "method": "GET",
+          "path": "/user/me",
+          "resource": "user",
+          "signature": "suspend fun getCurrentUser(params: GetCurrentUserParams, requestOptions: RequestOptions = RequestOptions()): ApiResult<Unit>"
+        },
+        "getHealth": {
+          "member": "health.getHealth",
+          "method": "GET",
+          "path": "/health",
+          "resource": "health",
+          "signature": "suspend fun getHealth(params: GetHealthParams, requestOptions: RequestOptions = RequestOptions()): ApiResult<Unit>"
+        },
+        "getSignupPolicy": {
+          "member": "user.getSignupPolicy",
+          "method": "GET",
+          "path": "/user/auth/signup-policy",
+          "resource": "user",
+          "signature": "suspend fun getSignupPolicy(params: GetSignupPolicyParams, requestOptions: RequestOptions = RequestOptions()): ApiResult<Unit>"
+        },
+        "loginUser": {
+          "member": "user.loginUser",
+          "method": "POST",
+          "path": "/user/auth/login",
+          "resource": "user",
+          "signature": "suspend fun loginUser(params: LoginUserParams, requestOptions: RequestOptions = RequestOptions()): ApiResult<Unit>"
+        },
+        "reserveUsageQuota": {
+          "member": "kernel.reserveUsageQuota",
+          "method": "POST",
+          "path": "/v1/kernel/usage/reserve",
+          "resource": "kernel",
+          "signature": "suspend fun reserveUsageQuota(params: ReserveUsageQuotaParams, requestOptions: RequestOptions = RequestOptions()): ApiResult<Unit>"
+        },
+        "submitWaitlistRequest": {
+          "member": "user.submitWaitlistRequest",
+          "method": "POST",
+          "path": "/user/auth/waitlist",
+          "resource": "user",
+          "signature": "suspend fun submitWaitlistRequest(params: SubmitWaitlistRequestParams, requestOptions: RequestOptions = RequestOptions()): ApiResult<Unit>"
+        }
+      },
+      "package_directory": "../JackAIPlatformOSHubAPIPublicSubsetSdk",
+      "package_manifest": "build.gradle.kts",
+      "reference": "api.md",
+      "renderer": "kotlin"
+    }
+  ]
+}
